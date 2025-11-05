@@ -30,7 +30,7 @@ EC2 > Instances > Click on
 In the bottom tabs -> Click on Security
 Security groups
 Add inbound traffic rules as shown in the image (you can just allow TCP 8080 as well, in my case, I allowed All traffic).
-Screenshot 2023-02-01 at 12 42 01 PM
+
 
 Login to Jenkins using the below URL:
 http://:8080 [You can get the ec2-instance-public-ip-address from your AWS EC2 console page]
@@ -39,22 +39,22 @@ Note: If you are not interested in allowing All Traffic to your EC2 instance 1. 
 
 After you login to Jenkins, - Run the command to copy the Jenkins Admin Password - sudo cat /var/lib/jenkins/secrets/initialAdminPassword - Enter the Administrator password
 
-Screenshot 2023-02-01 at 10 56 25 AM
+
 
 Click on Install suggested plugins
-Screenshot 2023-02-01 at 10 58 40 AM
+
 
 Wait for the Jenkins to Install suggested plugins
 
-Screenshot 2023-02-01 at 10 59 31 AM
+
 
 Create First Admin User or Skip the step [If you want to use this Jenkins instance for future use-cases as well, better to create admin user]
 
-Screenshot 2023-02-01 at 11 02 09 AM
+
 
 Jenkins Installation is Successful. You can now starting using the Jenkins
 
-Screenshot 2023-02-01 at 11 14 13 AM
+
 
 Install the Docker Pipeline plugin in Jenkins:
 Log in to Jenkins.
@@ -62,7 +62,7 @@ Go to Manage Jenkins > Manage Plugins.
 In the Available tab, search for "Docker Pipeline".
 Select the plugin and click the Install button.
 Restart Jenkins after the plugin is installed.
-Screenshot 2023-02-01 at 12 17 02 PM
+
 
 Wait for the Jenkins to be restarted.
 
